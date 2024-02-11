@@ -1,5 +1,5 @@
-import {Kafka, logLevel} from "kafkajs";
-import {getLocalBroker} from "../config/config.js";
+import {Kafka} from "kafkajs";
+import {getLocalBroker, getTopic} from "../config/config.js";
 import {convertTimestamp} from "./divers.js";
 
 const isLocalBroker = getLocalBroker();
